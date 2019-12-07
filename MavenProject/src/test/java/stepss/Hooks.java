@@ -1,0 +1,20 @@
+package stepss;
+
+import cucumber.api.Scenario;
+
+public class Hooks 
+{
+	public void AppLogin(Scenario sc)
+	{
+		System.out.println("TC Name"+ sc.getName());
+		System.out.println("Line no" + sc.getId());
+		System.out.println("Status:" + sc.getStatus());
+	}
+
+	public void Afterlogin(Scenario sc)
+	{
+		
+		System.out.println("Status:" + sc.getStatus());
+	}
+	
+}
